@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="tests">
+  <test thread-count="5" name="TestForFirefox(failed)" parallel="tests">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="com.hellofresh.challenge.WebTest">
+        <methods>
+          <include name="signInTest"/>
+          <include name="setUp"/>
+          <include name="checkFailure"/>
+        </methods>
+      </class> <!-- com.hellofresh.challenge.WebTest -->
+    </classes>
+  </test> <!-- TestForFirefox(failed) -->
+</suite> <!-- Failed suite [Suite] -->
